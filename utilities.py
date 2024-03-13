@@ -17,3 +17,20 @@ def sort_test(sort_method):
     if errors == 0:
         print("Sorted successfully.")
     print("Done")
+
+def get_random_array(size=200, low=1, high=10000):
+    """Returns an `size` element array with numbers between `low` and `high` of random numbers.
+
+    Args:
+        size (int, optional): Size of array. Defaults to 200.
+        low (int, optional): Lowest number allowed. Defaults to 1.
+        high (int, optional): Highest number allowed. Defaults to 10000.
+
+    Returns:
+        [int]: array of ints
+    """
+    return random.sample(range(low, high), size)
+    pass
+
+if __name__ == "__main__":
+    x = get_random_array()
