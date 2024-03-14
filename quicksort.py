@@ -1,5 +1,10 @@
 from utilities import get_random_array, sort_test 
-"""Two methods are shown below, BroCode looks cleaner.
+"""Quicksort moves smaller elements to the left of a pivot. The recursively divides the array into 2 partitions.
+    Time complexity best case n log(n), 
+        average: n log(n)
+        worst case n**2 -- when arr is already sorted.
+    Space complexity log(n) - recursion
+    Two methods are shown below, BroCode looks cleaner.
 """
 # Function to find the partition position
 def partition(array, low, high):
