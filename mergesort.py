@@ -1,12 +1,13 @@
 from utilities import sort_test
-    """Merge Sort: Recursively split the array in half. Once you reach size == 1, join it with its sibling in order. As you keep going up (in size) you end up "zipping" the 2 subarrays in order.
+"""Merge Sort: Recursively split the array in half. Once you reach size == 1, join it with its sibling in order. 
+    As you keep going up (in size) you end up "zipping" the 2 subarrays in order.
 
     Time Complexity: O(n log(n)) (for best worst and average cases.)
         The list is divided in half, to a maximum of Log(n) parts. The merging of all subarrays takes O(n) time.
 
     Space Complexity: O(n) 
 
-    """
+"""
 def merge_sort(list):
     left = 0
     right =  len(list) - 1
