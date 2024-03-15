@@ -1,6 +1,6 @@
 from utilities import get_random_array, sort_test
 
-    """Insertion Sort: Compare the `key` with previous elements. If the previous element is greater than `key`, move the previous element to the next position. 
+"""Insertion Sort: Compare the `key` with previous elements. If the previous element is greater than `key`, move the previous element to the next position. 
     Suppose we have this array: 
     [ 8 3 5 1 4 2 ]
     Starting at index 1, key is 3. Looking at the previous number (index 0) 8 > 3 ==> move the 8 to the next position and put the key 3,  in the previous position.
@@ -22,7 +22,7 @@ from utilities import get_random_array, sort_test
         3 > 2 [ 1 2 3 4 5 8 ]
         1 < 2 NO SWAP
         
-    """
+"""
 
 def insertion_sort(arr):
     """Similar to sorting a hand of cards.
