@@ -1,6 +1,14 @@
 from utilities import get_random_array, sort_test
 
 """Insertion Sort: Compare the `key` with previous elements. If the previous element is greater than `key`, move the previous element to the next position. 
+    Time Complexity: 
+        Best Case: O(n) - array already sorted
+        Avgerage Case: O(n**2) - array randomly sorted        
+        Worst Case: O(n**2) - array reversely sorted
+    Space Complexity: O(1)
+    Sorts in Place
+    Stable
+    
     Suppose we have this array: 
     [ 8 3 5 1 4 2 ]
     Starting at index 1, key is 3. Looking at the previous number (index 0) 8 > 3 ==> move the 8 to the next position and put the key 3,  in the previous position.
