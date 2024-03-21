@@ -9,7 +9,7 @@ def addEdge(adj, src, dest):
 # Space O(V)
 def displayGraph(adj, v):
     for i in range(v):
-        print(i, "-->", end="")
+        print(i, "--> ", end="")
         for j in range(len(adj[i])):
             print(adj[i][j], end=" ")
         print()
