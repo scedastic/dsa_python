@@ -11,7 +11,6 @@ def partition(array, low, high):
  
     # Choose the rightmost element as pivot
     pivot = array[high]
-    print(f"Pivot is {pivot}")
     # Pointer for greater element
     i = low - 1
  
@@ -21,17 +20,15 @@ def partition(array, low, high):
         if array[j] <= pivot:
  
             # If element smaller than pivot is found
-            # swap it with the greater element pointed by i
+            # swap it with the greater element pointed by i 
             # otherwise, j keeps moving while i stays put.
             i = i + 1
  
             # Swapping element at i with element at j
-            print(f"Below pivot: Swapping array[{i}]: {array[i]} with array[{j}]: {array[j]}")
             (array[i], array[j]) = (array[j], array[i])
             
     # Swap the pivot element with
     # the greater element specified by i
-    print(f"Swapping array[{i + 1}]: {array[i + 1]} with array[{high}]: {array[high]}")
     (array[i + 1], array[high]) = (array[high], array[i + 1])
  
     # Return the position from where partition is done
