@@ -1,5 +1,5 @@
 from utilities import get_random_array, sort_test 
-"""Quicksort moves smaller elements to the left of a pivot. The recursively divides the array into 2 partitions.
+"""Quicksort moves smaller elements to the left of a pivot. Then recursively divides the array into 2 partitions.
     Time complexity best case n log(n), 
         average: n log(n)
         worst case n**2 -- when arr is already sorted.
@@ -60,6 +60,8 @@ def quicksort_brocode(arr, start, end):
     
 def partition_brocode(arr, start, end):
     """All elements to the "Left" will be smaller than the pivot and all elements to the right will be greater.
+    i & j start at `start` j moves along the array. If j > pivot then i and j swap positions and i moves one position over. 
+    When j reaches the end, we swap it with the pivot and now the pivot is in the right spot.
 
     Args:
         arr (list): Array of unsorted ints
